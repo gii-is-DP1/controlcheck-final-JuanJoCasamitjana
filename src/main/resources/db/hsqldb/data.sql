@@ -62,3 +62,14 @@ INSERT INTO visits(id,pet_id,visit_date,description) VALUES (2, 8, '2013-01-02',
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (3, 8, '2013-01-03', 'neutered');
 INSERT INTO visits(id,pet_id,visit_date,description) VALUES (4, 7, '2013-01-04', 'spayed');
 
+INSERT INTO care(id, name, description) VALUES (1,'Hair brushing' ,'Hair brushing' );
+INSERT INTO care(id, name, description) VALUES (2, 'Chemical flea removal', 'Chemical flea removal');
+
+INSERT INTO Care_Provision(id, duration, visit_id, care_id) VALUES (1,0.5,1,1);
+INSERT INTO Care_Provision(id, duration, visit_id, care_id) VALUES (2,0.25,2,1);
+
+INSERT INTO CARE_COMPATIBLE_PET_TYPES(care_id,	COMPATIBLE_PET_TYPES_ID) VALUES(1,1);
+INSERT INTO CARE_COMPATIBLE_PET_TYPES(care_id,	COMPATIBLE_PET_TYPES_ID) VALUES(1,2);
+INSERT INTO CARE_COMPATIBLE_PET_TYPES(care_id,	COMPATIBLE_PET_TYPES_ID) VALUES(2,1);
+INSERT INTO CARE_COMPATIBLE_PET_TYPES(care_id,	COMPATIBLE_PET_TYPES_ID) VALUES(2,2);
+
